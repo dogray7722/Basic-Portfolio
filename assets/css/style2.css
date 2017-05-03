@@ -6,11 +6,9 @@ body {
 div.page {
 	width: 960px;
 	margin: 0 auto;
-	background-image: url("escheresque_ste.png");
-	}
+}
 
 h1 {
-
 	background-color: #4aaaa5;
 	color: #ffffff;
 }
@@ -20,60 +18,67 @@ h2, h3 {
 	color: #4aaaa5;
 }
 
-
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #f3f3f3;
-}
-
-li {
-	float: left;
-}
-
-li#name {
-	font-size: 18px;
-}
-
-li a{
-	display: block;
-	text-align: center;
-	padding: 25px 15px;
+/* Probably could have been handled by invoking the reset.css, but this gets
+rid of the default underline effects on all links.*/
+a {
 	text-decoration: none;
 }
 
-li a:hover:not(.active) {
-	background-color: #ddd;
-}
-
-li a.active {
-	color: white;
+/* Make my name stand out. */
+#name {
+	float: left;
+	padding: 12px;
+	text-align: center;
 	background-color: #4aaaa5;
 }
 
-.floatleft {
-
-	float: left;
-	margin: 10px 10px;
+/* Nav bar for the links to the other pages. */
+#nav {
+	float: right;
+	padding: 8px;
+	margin-top: 15px;
+	color: #777777;
 }
 
+/*Horizontify the links and space them*/
+#nav li {
+	display: inline;
+	margin: 5px;
+}
+
+/*Set the repeating background pattern anc clearn the floats 
+from the header elements.*/
+div.background {
+	clear: both;
+	background-image: url("escheresque_ste.png");
+	overflow: auto;
+	border-top: 3px solid #dddddd;
+}
+
+/*Style the about me page in the main section.*/
 div.aboutme {
+	float: left;
 	width: 550px;
 	margin-left: 30px;
 	margin-top: 80px;
 	margin-bottom: 40px;
 	padding: 10px;
 	border: 2px solid black;
-	float: left;
-	background-color: white;
+	background-color: #ffffff;
 }
+
 
 div.aboutme p {
 	line-height: 2.0em;
 }
 
+/* Wrap the text around my handsome photo.*/
+.floatleft {
+	float: left;
+	margin: 10px 10px;
+}
+
+/* Style the form box. */
 div.form {
 	width: 550px;
 	margin-left: 30px;
@@ -82,9 +87,10 @@ div.form {
 	padding: 20px;
 	border: 2px solid black;
 	float: left;
-	background-color: white;
+	background-color: #ffffff;
 }
 
+/* Main container for the portfolio items. */
 div.portfolio {
 	width: 550px;
 	margin-left: 30px;
@@ -96,13 +102,14 @@ div.portfolio {
 	background-color: white;
 }
 
+/* Container for the portfolio images. */
 div.container {
 	position: relative;
 	float: left;
 	margin: 5px;
 }
 
-
+/* Cointainer for the text overlays. */
 div.overlay {
 	position: absolute;
 	top: 73%;
@@ -115,6 +122,7 @@ div.overlay {
 	text-align: center;
 	}
 
+/* Various form element styles below.*/
 div.form input {
 	width: 40%;
 	padding: 5px 8px;
@@ -146,6 +154,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
+/* Styles for the connect with me box. */
 aside {
 	width: 270px;
 	height: 180px;
@@ -154,16 +163,14 @@ aside {
 	padding: 10px;
 	border: 2px solid black;
 	float: right;
-	background-color: white;
+	background-color: #ffffff;
 }
 
 aside h2 {
-
 	text-align: center;
 }
 
 aside img {
-	
 	margin-left: 15px;
 }
 
@@ -176,3 +183,13 @@ footer {
 	text-align: center;
 	border-top: 10px solid #4aaaa5;
 }
+
+
+
+
+
+
+
+
+
+
